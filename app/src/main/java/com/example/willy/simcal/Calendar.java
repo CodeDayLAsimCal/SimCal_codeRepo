@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
 
 public class Calendar extends AppCompatActivity {
 
@@ -44,6 +45,8 @@ public class Calendar extends AppCompatActivity {
 
     public void onClick(View view){
         //new AlertDialog(Calendar.this).show();
+        Intent startLogact = new Intent(Calendar.this, LoginActivity.class);
+        Calendar.this.startActivity(startLogact);
     }
 
 
