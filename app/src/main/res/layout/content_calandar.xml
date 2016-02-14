@@ -11,7 +11,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Calendar"
     tools:showIn="@layout/activity_calendar"
-    android:background="#9cd1e4">
+    android:background="@color/colorBack">
 
     <CalendarView
         android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
         android:id="@+id/calendarView"
         android:layout_alignParentTop="true"
         android:showWeekNumber="false"
-        android:background="#9cd1e4"
+        android:background="@color/colorBack"
         android:clickable="false" />
 
     <Button
