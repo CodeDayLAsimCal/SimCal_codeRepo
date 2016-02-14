@@ -9,6 +9,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.app.LoaderManager.LoaderCallbacks;
 
+import android.content.Intent;
 import android.content.CursorLoader;
 import android.content.Loader;
 import android.database.Cursor;
@@ -39,6 +40,7 @@ import static android.Manifest.permission.READ_CONTACTS;
  */
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
+    Calendar calender = new Calendar();
     /**
      * Id to identity READ_CONTACTS permission request.
      */
@@ -86,6 +88,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+                LoginActivity.this.startActivity(new Intent(LoginActivity.this, Calendar.class));
                 attemptLogin();
 
             }
