@@ -63,6 +63,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
+    private String email;
+    private String password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,14 +90,26 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                LoginActivity.this.startActivity(new Intent(LoginActivity.this, Calendar.class));
-                attemptLogin();
+
+                email = mEmailView.getText().toString();
+                password = mPasswordView.getText().toString();
+
+
+                if (email.equals("Shervin") && password.equals("Kellen")){
+                    LoginActivity.this.startActivity(new Intent(LoginActivity.this, Calendar.class));
+                }
+
+
+                //attemptLogin();
 
             }
         });
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+
+
+
     }
 
     private void populateAutoComplete() {
@@ -157,8 +171,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mPasswordView.setError(null);
 
         // Store values at the time of the login attempt.
-        String email = mEmailView.getText().toString();
-        String password = mPasswordView.getText().toString();
+        email = mEmailView.getText().toString();
+        password = mPasswordView.getText().toString();
 
         boolean cancel = false;
         View focusView = null;
