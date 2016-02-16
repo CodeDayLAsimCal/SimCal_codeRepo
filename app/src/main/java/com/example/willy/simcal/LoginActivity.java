@@ -30,8 +30,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.firebase.client.Firebase;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,17 +66,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private String email;
     private String password;
 
-    public Firebase myFirebaseRef = new Firebase("https://simcal.firebaseio.com/");
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-
-        //Initialize Firebase
-        super.onCreate(savedInstanceState);
-        Firebase.setAndroidContext(this);
-
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
