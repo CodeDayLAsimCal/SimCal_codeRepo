@@ -27,11 +27,11 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Event"
+        android:text="@string/button_text"
         android:id="@+id/addEvent"
         android:background="#ffffff"
         android:backgroundTint="#ffffff"
-        android:textSize="20dp"
+        android:textSize="10dp"
         android:textAlignment="center"
         android:singleLine="true"
         android:typeface="sans"
