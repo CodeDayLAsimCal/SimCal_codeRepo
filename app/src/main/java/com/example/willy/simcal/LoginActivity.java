@@ -197,7 +197,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mAuthTask.execute((Void) null);
         }
 
-        if (email.equals("Shervin") && password.equals("Kellen")){
+        if (email.equals("username") && password.equals("password")){
             LoginActivity.this.startActivity(new Intent(LoginActivity.this, Calendar.class));
         }
 
