@@ -198,7 +198,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }
 
         if (email.equals("username") && password.equals("password")){
-            LoginActivity.this.startActivity(new Intent(LoginActivity.this, Calendar.class));
+            LoginActivity.this.startActivity(new Intent(LoginActivity.this, navDrawerActivity.class));
         }
 
     }
