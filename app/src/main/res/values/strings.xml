@@ -18,9 +18,11 @@
 
     <!-- Strings for the CalenderView -->
     <string name="button_text">Go to Navigation</string>
-    <string name="title_activity_nav_drawer">navDrawerActivity</string>
 
+    <!-- Navigation Drawer Activity -->
+    <string name="title_activity_nav_drawer">SimCal-Navtest</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="snackbar_says">vedant@mathur.ca</string>
 
 </resources>
