@@ -3,3 +3,5 @@
 .idea
 *.properties
 *.iml
+*.properties
+build/intermediates/dex-cache/cache.xml
